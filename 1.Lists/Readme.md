@@ -39,3 +39,24 @@ letter **s** in the product name.
 [("paper", 10)]
 ```
 
+## 1.3. generate_names.py
+Given a list of names and surnames such as:
+
+```python
+names = ["juan", "ana", "raul", "sara", "arturo", "sandra"]
+surnames = ["alcazar", "alcon", "petersen", "ramirez", "fernandez", "aviles", "rivera"]
+```
+
+Write a function called `generate_random_names` that generates random combinations
+of names and surnames. the function should accept three parameters `generate_random_names(names, surnames, length)`, 
+where `names` is the names list, `surnames` the surnames list and `length` is the size of 
+the generated list. 
+
+The function should return a list of strings of size `length` with **capitalized, random** combinations 
+of names and surnames. Below an example:
+
+```python
+>>> generate_random_names(names, surnames, 3)
+["Juan Petersen", "Sara Rivera", "Ana Fernandez"]
+```
+
