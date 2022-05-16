@@ -60,3 +60,28 @@ of names and surnames. Below an example:
 ["Juan Petersen", "Sara Rivera", "Ana Fernandez"]
 ```
 
+## 1.4. student_report.py
+Given a list of dictionaries representing student grades:
+
+```python
+students = [
+    {"name": "Juan Perez", "grades": {"alg": 90, "calc": 80, "stat": 60}},
+    {"name": "Sara Rivera", "grades": {"alg": 40, "calc": 66, "stat": 98}},
+    {"name": "Ana Soliz", "grades": {"alg": 67, "calc": 67, "stat": 75}}
+]
+```
+
+Write a function called `get_student_report` that receives the list of student grades
+and a student name and returns the final grade for such student. The final grade can 
+be calculated using a simple average between all the individual grades.
+
+```python
+>>> get_student_report(students, "Juan Perez")
+{'name': 'Juan Perez', 'final_grade': 76}
+```
+
+You have to take in consideration the following requirements:
+
+  - the `final_grade` field should be an **integer**.
+  - if no student name is passed to the function, an error message should be printed and the function should return `None`
+  - the search for the student name should not be case sensitive, for example, `"Juan Perez"` should match with any combination of upper and lower case such as `"juan perez"` or `"jUAn peReZ"`
